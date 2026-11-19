@@ -1,6 +1,6 @@
-# Palimpsest
+# Kenaz ᚲ
 
-**The Earth, written over.** A satellite globe overlaid with old maps, photographs, drawings, newspaper clippings, historic events and strange accounts pulled live from free public archives. Zoom into any town and it becomes a museum you can walk through in time.
+**A torch held to the past.** Kenaz is the old Norse rune for "torch." A satellite globe overlaid with old maps, photographs, drawings, newspaper clippings, historic events and strange accounts pulled live from free public archives. Zoom into any town and it becomes a museum you can walk through in time.
 
 ## What's on the map
 - **Old maps**: georeferenced maps from David Rumsey, NYPL, Library of Congress, Harvard, Yale and others (via [Allmaps](https://allmaps.org)), draped over the satellite with a see-through slider.

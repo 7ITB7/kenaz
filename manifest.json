@@ -1,7 +1,7 @@
 {
- "name": "Palimpsest",
- "short_name": "Palimpsest",
- "description": "The Earth, written over: old maps, photos, newspapers and strange events on a satellite globe.",
+ "name": "Kenaz",
+ "short_name": "Kenaz",
+ "description": "A torch held to the past: old maps, photos, newspapers, events and strange accounts on a satellite globe. Every town becomes a museum you can walk through in time.",
  "start_url": "./",
  "display": "standalone",
  "background_color": "#06080b",

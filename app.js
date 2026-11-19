@@ -1,5 +1,5 @@
 'use strict';
-/* PALIMPSEST: the Earth, written over.
+/* KENAZ: a torch held to the past. (Kenaz is the old Norse rune for "torch".)
    A satellite globe with old maps, photos, drawings, newspapers, events and strange accounts
    pulled live from public archives. No build step, no backend, no keys. */
 
@@ -1452,7 +1452,7 @@ function openCaseFile() {
   };
   const copy = async () => {
     const txt = S.saved.map((s, i) => `${i + 1}. ${s.title || s.name} (${s.year != null ? fmtYear(s.year) : 'undated'})\n${[s.dateText, s.city ? s.city + ', ' + s.state : s.place, s.holder].filter(Boolean).join(' · ')}\n${s.link || ''}${s.note ? '\nNotes: ' + s.note : ''}`).join('\n\n');
-    try { await navigator.clipboard.writeText(`PALIMPSEST case file\n\n${txt}`); toast('Copied the case file'); } catch (e) { toast('Copy was blocked by the browser'); }
+    try { await navigator.clipboard.writeText(`KENAZ case file\n\n${txt}`); toast('Copied the case file'); } catch (e) { toast('Copy was blocked by the browser'); }
   };
   p.replaceChildren(
     h('div', { class: 'ph-head' }, h('div', { class: 'kick', text: 'Your' }), h('h2', { text: 'Case file' }),
@@ -1470,8 +1470,8 @@ function openIntro(again) {
   for (const [n, lat, lon, z] of [['Hartford', 41.7637, -72.6851, 13], ['New York', 40.7128, -74.006, 12.5], ['London', 51.5074, -0.1278, 12.5], ['Paris', 48.8566, 2.3522, 12.5], ['Rome', 41.9028, 12.4964, 12.5], ['Stay on the globe', null, null, null]])
     pills.append(h('button', { class: 'pill' + (lat == null ? '' : ' on'), type: 'button', text: n, onclick: () => { store.set('seenIntro', true); closeSheet(); if (lat != null) goTo(lat, lon, z); else idleSpin(); } }));
   openSheet('intro', h('div', { class: 'intro' },
-    h('div', { class: 'kick', text: 'Palimpsest · n. a page scraped and written over, the old writing still showing through' }),
-    h('div', { class: 'ttl', text: 'The Earth, written over' }),
+    h('div', { class: 'kick', text: 'Kenaz · ᚲ · the old Norse rune for “torch”: a light carried into the dark' }),
+    h('div', { class: 'ttl', text: 'Hold a torch to the past' }),
     h('ul', {},
       h('li', { text: 'Set the time dial at the bottom. Everything on the map follows it.' }),
       h('li', { text: 'Zoom into any town. Old maps drape over the satellite, and photos, drawings and newspapers pin themselves where they were made.' }),

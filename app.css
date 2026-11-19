@@ -29,7 +29,8 @@ body.aged #veil{background:radial-gradient(ellipse at 50% 45%,transparent 50%,rg
 #hud{position:fixed;z-index:5;top:0;left:0;right:0;padding:calc(var(--st) + 8px) calc(var(--sr) + 10px) 0 calc(var(--sl) + 12px);display:flex;align-items:flex-start;justify-content:space-between;pointer-events:none}
 #hud>*{pointer-events:auto}
 #brand{display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:4px 2px}
-#brand .w{font:22px/1 var(--sc);letter-spacing:.16em;color:var(--ink);text-shadow:0 0 18px rgba(0,0,0,.9),0 1px 2px #000}
+#brand .w{display:flex;align-items:center;gap:6px;font:24px/1 var(--sc);letter-spacing:.2em;color:var(--ink);text-shadow:0 0 18px rgba(0,0,0,.9),0 1px 2px #000}
+#brand .rune{width:20px;height:20px;fill:none;stroke:var(--acc);stroke-width:3.2;stroke-linecap:square;stroke-linejoin:miter;filter:drop-shadow(0 0 6px rgba(255,180,40,.8))}
 #brand .coords{font:10.5px/1.6 var(--mono);color:var(--acc);letter-spacing:.06em;text-shadow:0 1px 2px #000;margin-top:3px;white-space:nowrap}
 .tools{display:flex;gap:7px}
 .ic{width:42px;height:42px;border-radius:12px;background:var(--panel);border:1px solid var(--line2);display:grid;place-items:center;position:relative;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
